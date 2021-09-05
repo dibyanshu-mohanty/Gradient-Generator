@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6de3383711.js" crossorigin="anonymous"></script>
+    <title>Gradient Generator</title>
+</head>
+<body>
+    <h1>Gradient Generator</h1>
+    <div class="mr-auto ml-auto" id="alert-container">
+        <p><i class="fas fa-check-circle" style="color: green;"></i> Copied to Clipboard</p>
+    </div>
+    <div class="container">
+        <div class="col">
+            <div class="mb-5 " style="text-align: center;">
+                <h4>CLICK THE BUTTON BELOW TO GENERATE A GRADIENT</h4>
+                <code class="bg-light" id="code" style="color: black; padding: 8px; font-size: 20px;">background: <span id="config">linear-gradient</span>(to right,<span id="color1">#090ba4</span>,<span id="color2">#a8cc5f</span>) 
+                    <span><button id="copyCode"style="color: black;border: none; background: transparent;"><i class="far fa-clipboard"></i></button></span></code>
+            </div>
+            <form class="ml-auto mr-auto mb-4 bg-light" style="width: 200px; padding: 0 10px;">
+                <select id="options">
+                    <option value="linear">Linear Gradient</option>
+                    <option value="radial">Radial Gradient</option>
+                </select>
+            </form>
+            <div class="center-align">
+                <buton class="btn btn-dark bg-dark" id="generate">GENERATE</buton>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

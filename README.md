@@ -1,2 +1,2 @@
 # Gradient-Generator
-Project 5 of 15 Days , 15 JS projects
+Project 5 of 7 Days , 7 JS projects
